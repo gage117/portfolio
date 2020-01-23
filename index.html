@@ -5,34 +5,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
     <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="https://kit.fontawesome.com/cc9ee7c854.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 </head>
 <body>
-    <nav role="navigation">Nav</nav>
+    <nav role="navigation">
+        <div class='nav-mobile-container'>
+            <span class='nav-name'>Gage Eide</span>
+            <div class='menu-button-container'>
+                <span class='menu-text'>Menu</span>
+                <span class='menu-v'><i class="fas fa-signal"></i></span>
+            </div>
+        </div>
+        <div class='nav-list-container'>
+            <ul class="nav-list hide-nav">
+                <li>Home</li>
+                <li>Technologies</li>
+                <li>Projects</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+    </nav>
     <main role="main">
         <header role="banner">
-            <h1>Hero</h1>
+            <span class='above-fullstack'>Practical | Stylish | Responsive</span>
+            <h1 class='fullstack'>Full-Stack Development</h1>
         </header>
 
         <section>
-            Section 1
+            <h2>Technologies</h2>
+            <div class='icon-container'>
+                <span>
+                    <img src="images\html5&css3height100px.png" alt="HTML&CSS logo">
+                </span>
+                <span>
+                    <img src="images\javascript-height100px.png" alt="JS logo">
+                </span>
+                <span>
+                    <img src="images\jquery-height100px.png" alt="jquery logo">
+                </span>
+                <span>
+                    <img src="images\node-height100px.png" alt="node logo">
+                </span>
+            </div>
         </section>
 
         <section>
-            Section 2
+            <h2>Projects</h2>
+            <article class='project'>
+                <div>
+                    <img src="images\bookmark-app-screenshot.png" alt="Screenshot">
+                </div>
+                <div>
+                    <p>Bookmark Organizer</p>
+                    <p>An app that organizes and sorts bookmarks. It also stores bookmarks and can repull them on later visits. I created this app as an asignment for my coding bootcamp.</p>
+                    <div>
+                        <a href="#" target="_blank">Github Repo</a>
+                        <a href="#" target="_blank">Live Demo</a>
+                    </div>
+                </div>
+            </article>
+            <article class='project'>
+                <div>
+                    <img src="images\quiz-app-screenshot.png" alt="Screenshot">
+                </div>
+                <div>
+                    <p>Web Development Quiz</p>
+                    <p>A quiz created to hone our javascript and styling skills, it involves questions on Web Development and was created by myself and Hsin Ling Hu as an asignment for my coding bootcamp.</p>
+                    <div>
+                        <a href="#" target="_blank">Github Repo</a>
+                        <a href="#" target="_blank">Live Demo</a>
+                    </div>
+                </div>
+            </article>
         </section>
 
         <section>
-            Section 3
-        </section>
-
-        <section>
-            Project 3
-        </section>
-        
-        <section>
-            Section 4
+            <h2>About Me</h2>
+            <p class='bio'>Full-stack Developer with a passion for contradicting my desire to procrastinate by putting incredible amounts of effort and detail into apps that promote efficient use and sleek design.</p>
+            <div><i class="fas fa-caret-down"></i>Expand About Me<i class="fas fa-caret-down"></i></div>
+            <p>Based in St. Paul MN, I work in 7 months of winter and 5 months of not-winter with the middle month being scorching hot. As a result of that and my love of technology, I pursued software development.  I have experience in HTML/CSS, JS, jQuery, and Node, but am flexible and diverse, open to learning new languages and technologies. I will never stop learning, and never stop getting better.</p>
         </section>
     </main>
-    <footer role="content-info">Footer</footer>
+    <footer role="content-info">
+        <div class="contact-info">
+            <a href="https://github.com/gage117" target="_blank"><img src="images\github-height100px.png" alt="Github logo"></a>
+            <a href="https://www.linkedin.com/in/gage-eide/" target="_blank"><img src="images\linkedin-height100px.png" alt="LinkedIn logo"></a>
+            <a href="mailto:gageeide@gmail.com" target="_blank"><img src="images\gmail-height100px.png" alt="email logo"></a>
+        </div>
+    </footer>
+    <script src="/index.js"></script>
 </body>
 </html>
