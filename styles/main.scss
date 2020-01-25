@@ -1,0 +1,68 @@
+@import './variables';
+
+* {
+  box-sizing: border-box;
+  font-size: 20px;
+}
+
+@import './navbar';
+
+body {
+  font-family: 'Work Sans', sans-serif;
+  background-color: $baseBlue;
+  color: black;
+  text-align: center;
+  line-height: 1.5;
+  font-weight: 600;
+}
+
+@import './projects';
+
+footer {
+  padding: 1% 1%;
+  background-color: $greyBlue;
+}
+
+header {
+  padding: 3rem 0 1rem 0;
+  .stylish {
+    font-family: 'Dancing Script', cursive;
+    font-weight: 500;
+  }
+  * {
+    font-style: italic;
+  }
+  h1 {
+    font-weight: 800;
+    margin-bottom: .5rem;
+  }
+  p {
+    margin: .5rem 0 0 0;
+  }
+  .name-header {
+    font-size: 1.5rem;
+  }
+}
+
+
+
+
+
+section {
+  min-height: 200px;
+  padding: 6% 0;
+  background-color: $darkBlue;
+}
+
+section:nth-child(even) {
+  background-color: $lightBlue;
+}
+
+.about-me {
+  padding: 6% 3%;
+}
+
+.bio {
+  font-size: 1rem;
+  font-weight: bold;
+}

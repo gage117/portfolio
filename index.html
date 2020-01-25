@@ -4,7 +4,8 @@
     <title>HTML wireframe</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
-    <link rel="stylesheet" type="text/css" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script:500|Montserrat:300|Work+Sans&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="/styles/main.css">
     <script src="https://kit.fontawesome.com/cc9ee7c854.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 </head>
@@ -14,41 +15,32 @@
             <span class='nav-name'>Gage Eide</span>
             <div class='menu-button-container'>
                 <span class='menu-text'>Menu</span>
-                <span class='menu-v'><i class="fas fa-signal"></i></span>
+                <span class='menu-v'><i class="fas fa-signal" id='menu-icon'></i></span>
             </div>
         </div>
         <div class='nav-list-container'>
             <ul class="nav-list hide-nav">
                 <li>Home</li>
-                <li>Technologies</li>
-                <li>Projects</li>
                 <li>About</li>
+                <li>Projects</li>
                 <li>Contact</li>
             </ul>
         </div>
     </nav>
     <main role="main">
         <header role="banner">
-            <span class='above-fullstack'>Practical | Stylish | Responsive</span>
+            <span class='above-fullstack'>Practical | <span class='stylish'>Stylish</span> | Responsive</span>
             <h1 class='fullstack'>Full-Stack Development</h1>
+            <p>by</p>
+            <p class='name-header'>Gage</p>
         </header>
 
-        <section>
-            <h2>Technologies</h2>
-            <div class='icon-container'>
-                <span>
-                    <img src="images\html5&css3height100px.png" alt="HTML&CSS logo">
-                </span>
-                <span>
-                    <img src="images\javascript-height100px.png" alt="JS logo">
-                </span>
-                <span>
-                    <img src="images\jquery-height100px.png" alt="jquery logo">
-                </span>
-                <span>
-                    <img src="images\node-height100px.png" alt="node logo">
-                </span>
-            </div>
+        <section class='about-me'>
+            <h2>About Me</h2>
+            <p class='bio'>Based in St. Paul MN, I'm a VR and Sim racing enthusiast and a passionate Full-stack Developer that works in 8 months of winter and 4 months of scorching hot not-winter.</p>
+            <p>My current experience is in HTML/CSS, JS, jQuery, and Node, but I am flexible and diverse, open to learning new languages and technologies. I will never stop learning, and never stop getting better.</p>
+            <p>I leaped into coding after reaching the advancement ceiling of my local audio industry and wanting something new. In that industry, I gained a great deal of experience in communication, customer relations, and management skills.</p>
+            <p>But I wanted to be more hands-on with tech. Since I was a kid I wondered how computers worked. Knowing coding to be much of the magic, it quickly became a fiery passion as I entered boot camp to pursue my new life and I haven't stopped learning since.</p>
         </section>
 
         <section>
@@ -59,7 +51,21 @@
                 </div>
                 <div>
                     <p>Bookmark Organizer</p>
-                    <p>An app that organizes and sorts bookmarks. It also stores bookmarks and can repull them on later visits. I created this app as an asignment for my coding bootcamp.</p>
+                    <p>An app that organizes and sorts bookmarks. It also stores bookmarks and can repull them on later visits.</p>
+                    <div class='icon-container'>
+                        <span>
+                            <img src="images\html5&css3height100px.png" alt="HTML&CSS logo">
+                        </span>
+                        <span>
+                            <img src="images\javascript-height100px.png" alt="JS logo">
+                        </span>
+                        <span>
+                            <img src="images\jquery-height100px.png" alt="jquery logo">
+                        </span>
+                        <span>
+                            <img src="images\node-height100px.png" alt="node logo">
+                        </span>
+                    </div>
                     <div>
                         <a href="#" target="_blank">Github Repo</a>
                         <a href="#" target="_blank">Live Demo</a>
@@ -72,20 +78,27 @@
                 </div>
                 <div>
                     <p>Web Development Quiz</p>
-                    <p>A quiz created to hone our javascript and styling skills, it involves questions on Web Development and was created by myself and Hsin Ling Hu as an asignment for my coding bootcamp.</p>
+                    <p>A quiz created to hone our javascript and styling skills, it involves questions on Web Development and was created by myself and Hsin Ling Hu.</p>
+                    <div class='icon-container'>
+                        <span>
+                            <img src="images\html5&css3height100px.png" alt="HTML&CSS logo">
+                        </span>
+                        <span>
+                            <img src="images\javascript-height100px.png" alt="JS logo">
+                        </span>
+                        <span>
+                            <img src="images\jquery-height100px.png" alt="jquery logo">
+                        </span>
+                        <span>
+                            <img src="images\node-height100px.png" alt="node logo">
+                        </span>
+                    </div>
                     <div>
                         <a href="#" target="_blank">Github Repo</a>
                         <a href="#" target="_blank">Live Demo</a>
                     </div>
                 </div>
             </article>
-        </section>
-
-        <section>
-            <h2>About Me</h2>
-            <p class='bio'>Full-stack Developer with a passion for contradicting my desire to procrastinate by putting incredible amounts of effort and detail into apps that promote efficient use and sleek design.</p>
-            <div><i class="fas fa-caret-down"></i>Expand About Me<i class="fas fa-caret-down"></i></div>
-            <p>Based in St. Paul MN, I work in 7 months of winter and 5 months of not-winter with the middle month being scorching hot. As a result of that and my love of technology, I pursued software development.  I have experience in HTML/CSS, JS, jQuery, and Node, but am flexible and diverse, open to learning new languages and technologies. I will never stop learning, and never stop getting better.</p>
         </section>
     </main>
     <footer role="content-info">
