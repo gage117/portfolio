@@ -8,61 +8,68 @@
 @import './navbar';
 
 body {
+  margin: 0;
   font-family: 'Work Sans', sans-serif;
-  background-color: $baseBlue;
-  color: black;
+  background-color: $blueGreen;
+  color: $black;
   text-align: center;
   line-height: 1.5;
   font-weight: 600;
+}
+
+@import './header';
+
+.about-me {
+  padding: 6% 3%;
+  background-color: $darkGray;
+  color: $paleGreen;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  h2 {
+    margin-bottom: 0;
+    font-size: 1.4rem;
+    font-weight: 600;
+    font-style: italic;
+    color: $mintGreen;
+  }
+}
+
+.bio {
+  font-size: 1rem;
+  font-weight: 800;
 }
 
 @import './projects';
 
 footer {
   padding: 1% 1%;
-  background-color: $greyBlue;
-}
-
-header {
-  padding: 3rem 0 1rem 0;
-  .stylish {
-    font-family: 'Dancing Script', cursive;
-    font-weight: 500;
+  margin: 2rem 0 0 0;
+  height: 6rem;
+  .contact-links {
+    background-color: $black;
+    color: $paleGreen;
+    margin: 0;
+    height: 33.33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p {
+      margin: 0;
+    }
   }
-  * {
-    font-style: italic;
+  .contact-info {
+    background-color: $darkGray;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 66.66%;
   }
-  h1 {
-    font-weight: 800;
-    margin-bottom: .5rem;
+  a {
+    max-width: 25%;
+    max-height: 2rem;
   }
-  p {
-    margin: .5rem 0 0 0;
+  img {
+    max-width: 100%;
+    max-height: 2rem;
   }
-  .name-header {
-    font-size: 1.5rem;
-  }
-}
-
-
-
-
-
-section {
-  min-height: 200px;
-  padding: 6% 0;
-  background-color: $darkBlue;
-}
-
-section:nth-child(even) {
-  background-color: $lightBlue;
-}
-
-.about-me {
-  padding: 6% 3%;
-}
-
-.bio {
-  font-size: 1rem;
-  font-weight: bold;
 }

@@ -1,18 +1,25 @@
 @import './variables';
 nav {
     padding: 1% 1%;
-    background-color: $greyBlue;
-    color: black;
+    background-color: $mintGreen;
+    color: $black;
+    box-shadow: $darkGray 0px 9px 5px;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 10;
-    height: 2rem;
-  }
-
-  nav > * {
-    display: inline-block;
+    height: 2.5rem;
+    * {
+      display: inline-block;
+    }
+    span {
+      font-weight: 500;
+      font-size: 1.3rem;
+    }
+    .nav-name {
+      font-style: italic;
+    }
   }
   
   .nav-list {
@@ -36,6 +43,8 @@ nav {
   .nav-mobile-container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    height: 100%;
   }
   
   .menu-button-container {
