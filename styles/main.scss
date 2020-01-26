@@ -1,5 +1,9 @@
 @import './variables';
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   box-sizing: border-box;
   font-size: 20px;
@@ -42,9 +46,9 @@ body {
 @import './projects';
 
 footer {
-  padding: 1% 1%;
+  padding: 0;
   margin: 2rem 0 0 0;
-  height: 6rem;
+  height: 5rem;
   #contact-links {
     background-color: $black;
     color: $paleGreen;
@@ -65,11 +69,86 @@ footer {
     height: 66.66%;
   }
   a {
-    max-width: 25%;
+    max-width: 33%;
     max-height: 2rem;
   }
   img {
     max-width: 100%;
     max-height: 2rem;
+  }
+}
+
+@media screen and (min-width: 575px) {
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .menu-button-container {
+      display: none;
+    }
+    .icon {
+      display: none;
+    }
+    .nav-list-container {
+      border-radius: 0;
+      position: static;
+    }
+    .nav-list-container.active {
+      right: 0;
+      box-shadow: none;
+    }
+    .nav-list {
+      display: flex;
+      list-style-type: none;
+      background-color: $black;
+      padding: 0;
+      margin: 0;
+      width: auto;
+      border-radius: 0;
+        a {
+          text-decoration: none;
+          color: $paleGreen;
+        }
+        & > * {
+          font-size: 1rem;
+          padding: 0 .5rem;
+          margin: .2rem 0rem;
+          display: block;
+        }
+        & > hr {
+          display: none;
+        }
+        & > li:hover {
+          background-color: $black;
+          border-radius: .3rem;
+          cursor: pointer;
+          a {
+          color: $blueGreen;
+          }
+        }
+    }
+  }
+  main {
+    max-width: 575px;
+    margin: auto;
+    section {
+      border-radius: .4rem;
+    }
+  }
+  footer {
+    max-width: 575px;
+    margin: 2rem auto 0;
+    #contact-links {
+      border-radius: .4rem .4rem 0 0;
+    }
+  }
+}
+
+@media screen and (min-width: 800px) {
+  main {
+    max-width: 72%;
+  }
+  footer {
+    max-width: 72%;
   }
 }
