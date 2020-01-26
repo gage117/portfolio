@@ -1,5 +1,45 @@
-.project-container {
+#project-container {
   background-color: $darkGray;
+  padding: 1rem .5rem;
+  h2 {
+    margin: 0 0 1rem 0;
+    color: $mintGreen;
+    font-size: 1.4rem;
+    font-style: italic;
+  }
+  .project {
+    background-color: $black;
+    color: $paleGreen;
+    padding: .25rem .5rem .5rem;
+    margin-bottom: 1rem;
+  }
+  .project-description {
+    font-weight: 500;
+  }
+  .icon-container {
+    background-color: $darkGreen;
+    padding: .25rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  span {
+    max-width: 20%;
+    display: flex;
+  }
+  img {
+    max-width: 90%;
+  }
+  .project-links {
+    margin: 1rem 0;
+    display: flex;
+    justify-content: space-around;
+    max-width: 100%;
+    color: $paleGreen;
+    a {
+      color: $paleGreen;
+    }
+  }
 }
 
 .project > div > img {

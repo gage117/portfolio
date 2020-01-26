@@ -19,14 +19,14 @@ body {
 
 @import './header';
 
-.about-me {
-  padding: 6% 3%;
+#about-me {
+  padding: 1rem .5rem;
   background-color: $darkGray;
   color: $paleGreen;
   font-weight: 500;
   margin-bottom: 2rem;
   h2 {
-    margin-bottom: 0;
+    margin: .5rem 0 0 0;
     font-size: 1.4rem;
     font-weight: 600;
     font-style: italic;
@@ -45,7 +45,7 @@ footer {
   padding: 1% 1%;
   margin: 2rem 0 0 0;
   height: 6rem;
-  .contact-links {
+  #contact-links {
     background-color: $black;
     color: $paleGreen;
     margin: 0;
