@@ -35,7 +35,7 @@ nav span {
 nav .nav-list-container {
   border-radius: 0 0 .5rem .5rem;
   position: absolute;
-  bottom: -10.8rem;
+  top: 2.5rem;
   right: -10rem;
   -webkit-transition: .5s;
   transition: .5s;
@@ -331,6 +331,10 @@ header p {
 
 .project > div > img {
   max-width: 100%;
+}
+
+.project > h3 {
+  font-size: 1.2rem;
 }
 
 footer {
