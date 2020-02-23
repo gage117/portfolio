@@ -1,0 +1,154 @@
+@import './variables';
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  font-size: 20px;
+}
+
+@import './navbar';
+
+body {
+  margin: 0;
+  font-family: 'Work Sans', sans-serif;
+  background-color: $blueGreen;
+  color: $black;
+  text-align: center;
+  line-height: 1.5;
+  font-weight: 600;
+}
+
+@import './header';
+
+#about-me {
+  padding: 1rem .5rem;
+  background-color: $darkGray;
+  color: $paleGreen;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  h2 {
+    margin: .5rem 0 0 0;
+    font-size: 1.4rem;
+    font-weight: 600;
+    font-style: italic;
+    color: $mintGreen;
+  }
+}
+
+.bio {
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+@import './projects';
+
+footer {
+  padding: 0;
+  margin: 2rem 0 0 0;
+  height: 5rem;
+  #contact-links {
+    background-color: $black;
+    color: $paleGreen;
+    margin: 0;
+    height: 33.33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p {
+      margin: 0;
+    }
+  }
+  .contact-info {
+    background-color: $darkGray;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 66.66%;
+  }
+  a {
+    max-width: 33%;
+    max-height: 2rem;
+  }
+  img {
+    max-width: 100%;
+    max-height: 2rem;
+  }
+}
+
+@media screen and (min-width: 575px) {
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .menu-button-container {
+      display: none;
+    }
+    .icon {
+      display: none;
+    }
+    .nav-list-container {
+      border-radius: 0;
+      position: static;
+    }
+    .nav-list-container.active {
+      right: 0;
+      box-shadow: none;
+    }
+    .nav-list {
+      display: flex;
+      list-style-type: none;
+      background-color: $black;
+      padding: 0;
+      margin: 0;
+      width: auto;
+      border-radius: 0;
+        a {
+          text-decoration: none;
+          color: $paleGreen;
+        }
+        & > * {
+          font-size: 1rem;
+          padding: 0 .5rem;
+          margin: .2rem 0rem;
+          display: block;
+        }
+        & > hr {
+          display: none;
+        }
+        & > li:hover {
+          background-color: $black;
+          border-radius: .3rem;
+          cursor: pointer;
+          a {
+          color: $blueGreen;
+          }
+        }
+    }
+  }
+  main {
+    max-width: 575px;
+    margin: auto;
+    section {
+      border-radius: .4rem;
+    }
+  }
+  footer {
+    max-width: 575px;
+    margin: 2rem auto 0;
+    #contact-links {
+      border-radius: .4rem .4rem 0 0;
+    }
+  }
+}
+
+@media screen and (min-width: 800px) {
+  main {
+    max-width: 72%;
+  }
+  footer {
+    max-width: 72%;
+  }
+}
