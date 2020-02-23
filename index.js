@@ -12,7 +12,7 @@ const handleMenuItemClick = function() {
     let element = $(e.currentTarget).find('a').attr('href');
     var offset = $(element).offset();
     var scrollto = offset.top - 50; // minus fixed header height
-    $('html, body').animate({scrollTop:scrollto}, 0);
+    $(document.body).animate({scrollTop:scrollto}, 0);
   });
 };
 
