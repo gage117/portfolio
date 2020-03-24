@@ -40,6 +40,8 @@
     max-width: 100%;
     color: $paleGreen;
     a {
+      display: inline-block;
+      min-width: 33%;
       color: $paleGreen;
     }
   }
