@@ -1,47 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Gage Eide Portfolio</title>
-    <meta charset="utf-8"/>
+    <title>Gage Eide - Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="images/favicon/favicon.ico">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script:500%7CMontserrat:300%7CWork+Sans&display=swap" rel="stylesheet">    
     <link rel="stylesheet" href="main.css">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 </head>
 <body>
-    <nav>
-        <div class='nav-mobile-container'>
+    <nav role="navigation">
+        <section class='nav-mobile-container'>
             <span class='nav-name'>Gage Eide</span>
             <div class='menu-button-container'>
                 <div class='icon'>
                     <div class='hamburger'></div>
                 </div>
             </div>
-        </div>
-        <div class='nav-list-container'>
+        </section>
+        <section class='nav-list-container'>
             <ul class="nav-list">
-                <li class='nav-list-item'><a href="#main">Home</a><hr /></li>
-                <li class='nav-list-item'><a href="#about-me">Bio</a><hr /></li>
-                <li class='nav-list-item'><a href="#project-container">Projects</a><hr /></li>
+                <li class='nav-list-item'><a href="#main">Home</a></li>
+                <li class='nav-list-item'><a href="#about-me">Bio</a></li>
+                <li class='nav-list-item'><a href="#project-container">Projects</a></li>
                 <li class='nav-list-item'><a href="#contact-links">Contact</a></li>
             </ul>
-        </div>
+        </section>
     </nav>
-    <main id='main'>
-        <header>
+    <main role="main" id='main'>
+        <header role="banner">
             <div id='offset-heading'>
-                <span class='responsive'>Responsive</span>
-                <span class='stylish'>Stylish</span>
-                <span class='practical'>Practical</span>
+                <span class='stylish'>Gage Eide</span>
             </div>
-            <h1 class='fullstack'>Full-Stack Development</h1>
+            <h1 class='fullstack'>Full-Stack Software Engineer</h1>
         </header>
 
         <section id='about-me'>
             <h2>About Me</h2>
             <p class='bio'>Based in St. Paul MN, I'm a VR and Sim racing enthusiast and a passionate Full-stack Developer that works in 8 months of winter and 4 months of scorching hot not-winter.</p>
-            <p>My current experience is in HTML/CSS, JS, jQuery, and Node, but I am flexible and diverse, open to learning new languages and technologies. I will never stop learning, and never stop getting better.</p>
+            <p>I currently have experience in HTML/CSS, JS, jQuery, PostgreSQL, and Node, but I am flexible and diverse, open to learning new languages and technologies. I will never stop learning, and never stop getting better.</p>
+            <p>I'd love to be part of a project or team that challenges me. Something that grants me new opportunities on top of it to evolve my skills, bringing more value to me, the company, and the project.</p>
             <p>I leaped into coding after reaching the advancement ceiling of my local audio industry and wanting something new. In that industry, I gained a great deal of experience in communication, customer relations, and management skills.</p>
             <p>But I wanted to be more hands-on with tech. Since I was a kid I wondered how computers worked. Knowing coding to be much of the magic, it quickly became a fiery passion as I entered boot camp to pursue my new life and I haven't stopped learning since.</p>
         </section>
@@ -49,9 +49,40 @@
         <section id='project-container'>
             <h2>Projects</h2>
             <article class='project'>
-                <h3>Bookmark Organizer</h3>
+                <p>Nutrilyze</p>
                 <div>
-                    <img src="images/bookmark-app-screenshot.png" alt="Screenshot">
+                    <img src="images\nutrilyze-screenshot.png" alt="Screenshot">
+                </div>
+                <div>
+                    <p class='project-description'>Nutrilyze is a nutrition and food tracker that allows you to easily add caloric and nutritional intake (e.g. carbs, protein, etc..) and even store foods with their name and nutrition values to easily add again later.</p>
+                    <div class='project-links'>
+                        <a href="https://github.com/gage117/nutrilyze-client" target="_blank">Github Client Repo</a>
+                        <a href="https://github.com/gage117/nutrilyze-server-api" target="_blank">Github Server Repo</a>
+                        <a href="https://nutrilyze-client.now.sh/" target="_blank">Live Demo</a>
+                    </div>
+                    <div class='icon-container'>
+                        <span>
+                            <img src="images\html5height100px.png" alt="HTML logo">
+                        </span>
+                        <span>
+                            <img src="images\css3-height100px.png" alt="CSS logo">
+                        </span>
+                        <span>
+                            <img src="images\javascript-height100px.png" alt="JS logo">
+                        </span>
+                        <span>
+                            <img src="images\node-height100px.png" alt="node logo">
+                        </span>
+                        <span>
+                            <img src="images\postgresql-height100px.png" alt="PostgreSQL logo">
+                        </span>
+                    </div>
+                </div>
+            </article>
+            <article class='project'>
+                <p>Bookmark Organizer</p>
+                <div>
+                    <img src="images\bookmark-app-screenshot.png" alt="Screenshot">
                 </div>
                 <div>
                     <p class='project-description'>An app that sorts bookmarks. It also stores bookmarks and can repull them on later visits.</p>
@@ -61,27 +92,27 @@
                     </div>
                     <div class='icon-container'>
                         <span>
-                            <img src="images/html5height100px.png" alt="HTML logo">
+                            <img src="images\html5height100px.png" alt="HTML logo">
                         </span>
                         <span>
-                            <img src="images/css3-height100px.png" alt="CSS logo">
+                            <img src="images\css3-height100px.png" alt="CSS logo">
                         </span>
                         <span>
-                            <img src="images/javascript-height100px.png" alt="JS logo">
+                            <img src="images\javascript-height100px.png" alt="JS logo">
                         </span>
                         <span>
-                            <img src="images/jquery-height100px.png" alt="jquery logo">
+                            <img src="images\jquery-height100px.png" alt="jquery logo">
                         </span>
                         <span>
-                            <img src="images/node-height100px.png" alt="node logo">
+                            <img src="images\node-height100px.png" alt="node logo">
                         </span>
                     </div>
                 </div>
             </article>
             <article class='project'>
-                <h3>Web Development Quiz</h3>
+                <p>Web Development Quiz</p>
                 <div>
-                    <img src="images/quiz-app-screenshot.png" alt="Screenshot">
+                    <img src="images\quiz-app-screenshot.png" alt="Screenshot">
                 </div>
                 <div>
                     <p class='project-description'>A quiz created to hone our javascript and styling skills, it involves questions on Web Development and was created by myself and Hsin Ling Hu.</p>
@@ -91,29 +122,53 @@
                     </div>
                     <div class='icon-container'>
                         <span>
-                            <img src="images/html5height100px.png" alt="HTML logo">
+                            <img src="images\html5height100px.png" alt="HTML logo">
                         </span>
                         <span>
-                            <img src="images/css3-height100px.png" alt="CSS logo">
+                            <img src="images\css3-height100px.png" alt="CSS logo">
                         </span>
                         <span>
-                            <img src="images/javascript-height100px.png" alt="JS logo">
+                            <img src="images\javascript-height100px.png" alt="JS logo">
+                        </span>
+                    </div>
+                </div>
+            </article>
+            <article class='project'>
+                <p>This Portfolio!</p>
+                <div class='portfolio-screenshot'>
+                    <p>204 - No Screenshot</p>
+                    <p>You're already here ;D</p>
+                </div>
+                <div>
+                    <p class='project-description'>This Portfolio was made with Semantic HTML and Vanilla CSS (minus the SCSS I used for modularization). There is JavaScript but only to handle the event handlers for the mobile menu.</p>
+                    <div class='project-links'>
+                        <a href="https://github.com/gage117/portfolio" target="_blank">Github Repo</a>
+                    </div>
+                    <div class='icon-container'>
+                        <span>
+                            <img src="images\html5height100px.png" alt="HTML logo">
+                        </span>
+                        <span>
+                            <img src="images\css3-height100px.png" alt="CSS logo">
+                        </span>
+                        <span>
+                            <img src="images\javascript-height100px.png" alt="JS logo">
                         </span>
                     </div>
                 </div>
             </article>
         </section>
     </main>
-    <footer>
+    <footer role="contact-info">
         <div id='contact-links'>
             <p>Contact Links</p>
         </div>
         <div class="contact-info">
-            <a href="https://github.com/gage117" target="_blank"><img src="images/github-height100px.png" alt="Github logo"></a>
-            <a href="https://www.linkedin.com/in/gage-eide/" target="_blank"><img src="images/linkedin-height100px.png" alt="LinkedIn logo"></a>
-            <a href="mailto:gageeide@gmail.com" target="_blank"><img src="images/gmail-height100px.png" alt="email logo"></a>
+            <a href="https://github.com/gage117" target="_blank"><img src="images\github-height100px.png" alt="Github logo"></a>
+            <a href="https://www.linkedin.com/in/gage-eide/" target="_blank"><img src="images\linkedin-height100px.png" alt="LinkedIn logo"></a>
+            <a href="mailto:gageeide@gmail.com" target="_blank"><img src="images\gmail-height100px.png" alt="email logo"></a>
         </div>
     </footer>
-    <script src="index.js"></script>
+    <script src="index.js" type="text/Javascript"></script>
 </body>
 </html>
