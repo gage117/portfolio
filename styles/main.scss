@@ -4,6 +4,19 @@ html {
   scroll-behavior: smooth;
 }
 
+html::-webkit-scrollbar {
+  width: .75rem;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: $baseGreen;
+  border-radius: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+  background-color: $darkGray;
+}
+
 * {
   box-sizing: border-box;
   font-size: 20px;
