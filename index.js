@@ -7,12 +7,12 @@ const handleMenuDropdownClick = function() {
 
 const handleMenuItemClick = function() {
   $('.nav-list-item').click((e) => {
+    e.preventDefault();
     $('.nav-list-container').toggleClass('active');
     $('.icon').toggleClass('active');
     let element = $(e.currentTarget).find('a').attr('href');
-    var offset = $(element).offset();
-    var scrollto = offset.top - 50; // minus fixed header height
-    $(document.body).animate({scrollTop:scrollto}, 0);
+    var scrollto = $(element).offset().top - 50; // minus fixed header height
+    $('html, body').animate({scrollTop: scrollto}, 0);
   });
 };
 
