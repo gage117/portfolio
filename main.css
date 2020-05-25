@@ -192,7 +192,7 @@ header p {
 }
 #about-me h2 {
   margin: 0.5rem 0 0 0;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: 600;
   font-style: italic;
   color: #A2F7BF;
@@ -205,29 +205,30 @@ header p {
 
 #project-container {
   background-color: #393E46;
-  padding: 0rem 0.5rem 0.5rem;
+  padding: 0rem 2vw 2vw;
 }
 #project-container h2 {
   padding: 1rem 0 0rem 0;
   margin: 0;
   color: #A2F7BF;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-style: italic;
 }
 #project-container .project {
   background-color: #222831;
   color: #CCEDD2;
-  padding: 0.25rem 0.5rem 0.5rem;
+  padding: 0.25rem 0 0;
   margin: 1.5rem 0 0;
-  border-radius: 0.4rem;
+  border-radius: 1vmax;
 }
 #project-container .project-description {
   font-weight: 500;
+  padding: 0 .5rem;
 }
 #project-container .icon-container {
   background-color: #496353;
   padding: 0.75rem 0.25rem;
-  border-radius: 0.4rem;
+  border-radius: 0 0 1vmax 1vmax;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -244,7 +245,7 @@ header p {
   margin: auto;
   padding: 0.5rem 0;
   max-width: 90%;
-  border-radius: 0.5rem;
+  border-radius: 1vmax;
 }
 #project-container .project-links {
   margin: 1rem 0;
@@ -357,7 +358,7 @@ footer img {
     margin: auto;
   }
   main section {
-    border-radius: 0.4rem;
+    border-radius: 1vmax;
   }
 
   footer {
@@ -365,7 +366,7 @@ footer img {
     margin: 2rem auto 0;
   }
   footer #contact-links {
-    border-radius: 0.4rem 0.4rem 0 0;
+    border-radius: 1vmax 1vmax 0 0;
   }
 }
 @media screen and (min-width: 800px) {
