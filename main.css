@@ -209,7 +209,7 @@ header p {
 }
 
 #about-me {
-  padding: 1rem 0.5rem;
+  padding: 1rem 2vw;
   background-color: var(--black);
   color: var(--lightgray);
   font-weight: 400;
@@ -263,7 +263,7 @@ header p {
 #project-container .icon-container {
   background-color: var(--primary-light);
   padding: 0.75rem 0.25rem;
-  border-radius: 0 0 1vmax 1vmax;
+  border-radius: 1vmax;
   display: flex;
   justify-content: space-around;
   align-items: center;
