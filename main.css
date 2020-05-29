@@ -209,7 +209,7 @@ header p {
 }
 
 #about-me {
-  padding: 1rem 2vw;
+  padding: 1rem 4vw;
   background-color: var(--black);
   color: var(--lightgray);
   font-weight: 400;
@@ -235,7 +235,7 @@ header p {
 
 #project-container {
   background-color: var(--black);
-  padding: 0rem 2vw 2vw;
+  padding: 0rem 4vw 4vw;
 }
 
 #project-container h2 {
